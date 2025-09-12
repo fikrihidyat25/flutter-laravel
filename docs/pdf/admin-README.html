@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3, h4 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+# Admin (PHP)
+
+Dokumen ini mencakup panduan untuk pengembang internal dan ringkasan panduan end user (operator/admin bisnis).
+
+- Untuk peta proyek lengkap, lihat <code>../README.md</code>
+- Untuk API yang digunakan oleh aplikasi User, lihat <code>../docs/API.md</code>
+
+## Prasyarat (Dev)
+- PHP vX.Y
+- Composer
+- Database (MySQL/PostgreSQL)
+- Ekstensi PHP yang diperlukan (sesuaikan framework)
+
+## Setup (Dev)
+<code>`</code>bash
+cp .env.example .env
+composer install
+# Jika Laravel:
+php artisan key:generate
+# Migrasi & seeding (opsional):
+php artisan migrate --seed
+# Jalankan server dev:
+php artisan serve
+<code>`</code>
+
+Jika menggunakan framework lain (CodeIgniter, dsb.), sesuaikan perintah di atas. Detail lebih lanjut dapat ditambahkan oleh maintainer.
+
+## Konfigurasi (Dev)
+- DB: <code>DB_HOST</code>, <code>DB_DATABASE</code>, <code>DB_USERNAME</code>, <code>DB_PASSWORD</code>
+- APP: <code>APP_NAME</code>, <code>APP_ENV</code>, <code>APP_URL</code>
+- Auth: (mis. JWT/Session) — pastikan konsisten dengan <code>docs/API.md</code>
+
+## Struktur Folder (Contoh Umum)
+<code>`</code>
+admin/
+  app/
+  public/
+  resources/
+  routes/
+  config/
+  ...
+<code>`</code>
+
+## Testing & Linting (Dev)
+<code>`</code>bash
+# Contoh Laravel/PHPUnit
+composer test
+# Static analysis (opsional)
+# vendor/bin/phpstan analyse
+<code>`</code>
+
+## Deployment (Ringkas)
+- Build artefak jika perlu
+- Jalankan migrasi DB pada lingkungan produksi
+- Set variabel lingkungan sesuai <code>.env</code>
+
+## Panduan End User Admin
+Bagian ini untuk operator/admin non-teknis yang mengelola panel.
+
+### Login
+- Buka URL panel admin: <code>https://{domain}/admin</code>
+- Masukkan username dan password yang diberikan
+
+### Navigasi Utama
+- Dashboard: ringkasan metrik
+- Data Master: kelola data utama
+- Transaksi/Operasional: proses harian
+- Pengaturan: manajemen pengguna & hak akses
+
+### Tugas Umum
+- Menambah data: klik tombol "Tambah", isi form, simpan
+- Mengubah data: klik ikon edit pada baris, simpan
+- Menghapus data: klik ikon hapus, konfirmasi
+- Ekspor data: gunakan tombol ekspor (jika tersedia)
+
+### Reset Kata Sandi
+- Gunakan fitur "Lupa Kata Sandi" atau hubungi admin sistem
+
+> Catatan: Detail menu/fungsi spesifik silakan lengkapi sesuai modul yang tersedia.
+
+## Troubleshooting
+- Port bentrok saat <code>serve</code> → ubah port atau hentikan proses yang aktif
+- Koneksi DB gagal → periksa kredensial <code>.env</code> dan izin firewall
+- 500 Internal Error → cek log aplikasi (mis. <code>storage/logs</code>)
+
+</body>
+</html>

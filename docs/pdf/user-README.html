@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3, h4 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+# User App (Flutter)
+
+Dokumen ini mencakup panduan untuk pengembang internal dan ringkasan panduan end user aplikasi.
+
+- Untuk peta proyek lengkap, lihat <code>../README.md</code>
+- Untuk API backend, lihat <code>../docs/API.md</code>
+
+## Prasyarat (Dev)
+- Flutter SDK (channel stable)
+- Android Studio/Xcode, device/emulator
+
+## Setup (Dev)
+<code>`</code>bash
+flutter --version
+flutter pub get
+<code>`</code>
+
+## Jalankan (Dev)
+<code>`</code>bash
+# Web (opsional)
+flutter run -d chrome
+# Android
+a) nyalakan emulator atau hubungkan device
+b) flutter run -d emulator-5554   # contoh
+# iOS
+flutter run -d ios
+<code>`</code>
+
+## Build (Dev)
+<code>`</code>bash
+flutter build apk
+flutter build appbundle
+# iOS
+a) flutter build ios
+<code>`</code>
+
+## Environment (Dev)
+- Base API URL menggunakan <code>--dart-define</code>:
+<code>`</code>bash
+flutter run --dart-define=API_BASE_URL=https://api.example.com
+<code>`</code>
+- Tambahkan variabel lain sesuai kebutuhan (mis. <code>SENTRY_DSN</code>, <code>FLAVOR</code>)
+
+## Struktur Folder (Ringkas)
+<code>`</code>
+user/lib/
+  pages/
+    home.dart
+  widgets/
+  services/
+  models/
+<code>`</code>
+
+## Testing & Linting (Dev)
+<code>`</code>bash
+flutter test
+dart format .
+dart analyze
+<code>`</code>
+
+## Panduan End User Aplikasi User
+- Instal aplikasi dari Play Store/App Store (atau file APK/IPA yang diberikan)
+- Buka aplikasi, login menggunakan akun terdaftar
+- Navigasi: gunakan tab/menu bawah untuk berpindah fitur
+- Pencarian/Filter: tersedia di halaman tertentu
+- Notifikasi: pastikan izin notifikasi diaktifkan
+
+### Tips Penggunaan
+- Pastikan koneksi internet stabil
+- Jika terjadi force close, buka ulang aplikasi dan pastikan versi terbaru
+
+### Bantuan
+- Hubungi support melalui menu Bantuan/Profil atau kontak yang disediakan
+
+## Troubleshooting
+- Gagal build Android → <code>flutter clean && flutter pub get</code>, cek versi Gradle/SDK
+- API tidak merespons → cek <code>API_BASE_URL</code>, dan konektivitas jaringan
+- Masalah izin (kamera/lokasi) → pastikan izin diaktifkan di pengaturan OS
+
+</body>
+</html>

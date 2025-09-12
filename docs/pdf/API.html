@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3, h4 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+# Spesifikasi API
+
+Dokumen ini merangkum autentikasi, endpoint umum, dan skema respons yang digunakan bersama oleh modul Admin dan Aplikasi User.
+
+## Autentikasi
+- Skema umum: Bearer Token atau Session (sesuaikan implementasi)
+- Header: <code>Authorization: Bearer <token></code>
+- Mendapatkan token: melalui endpoint login
+
+## Konvensi
+- Base URL: <code>https://api.example.com</code> (sesuaikan di lingkungan)
+- Format respons umum:
+<code>`</code>json
+{
+  "success": true,
+  "message": "",
+  "data": {}
+}
+<code>`</code>
+- Error standar:
+<code>`</code>json
+{
+  "success": false,
+  "message": "invalid_credentials",
+  "errors": {}
+}
+<code>`</code>
+
+## Endpoint
+
+### POST /v1/auth/login
+- Deskripsi: Autentikasi pengguna untuk mendapatkan token
+- Body:
+<code>`</code>json
+{ "email": "string", "password": "string" }
+<code>`</code>
+- 200:
+<code>`</code>json
+{ "token": "<jwt>" }
+<code>`</code>
+- 401:
+<code>`</code>json
+{ "success": false, "message": "invalid_credentials" }
+<code>`</code>
+
+### GET /v1/items
+- Query: <code>page</code> (number), <code>limit</code> (number)
+- 200:
+<code>`</code>json
+{ "data": [], "page": 1, "total": 0 }
+<code>`</code>
+
+### GET /v1/profile
+- Header: <code>Authorization: Bearer <token></code>
+- 200:
+<code>`</code>json
+{ "id": 1, "name": "User", "email": "user@example.com" }
+<code>`</code>
+
+> Lengkapi daftar endpoint sesuai modul aktual (CRUD, upload, dsb.).
+
+## Versi & Deprekasi
+- Versi API: <code>v1</code>
+- Perubahan breaking: komunikasikan di <code>CHANGELOG.md</code> dan beri masa deprekasi
+
+</body>
+</html>

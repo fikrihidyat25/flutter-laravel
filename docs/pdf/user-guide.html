@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cihuy Platform</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .cover-container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .version {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+        .date {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="logo">ðŸš€</div>
+        <div class="title">Cihuy Platform</div>
+        <div class="subtitle">User Guide</div>
+        <div class="version">Version 1.0</div>
+        <div class="date">September 2025</div>
+    </div>
+    <div class="footer">Â© 2025 Cihuy Platform. All rights reserved.</div>
+</body>
+</html>
+<div class='page-break'></div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cihuy Platform - User Guide</title>
+    <style>
+        @page {
+            margin: 2cm;
+            @bottom-center {
+                content: "Page " counter(page);
+                font-size: 10pt;
+                color: #666;
+            }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .main-title {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        
+        .section-title {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        
+        .subsection-title {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        
+        .subsubsection-title {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .paragraph {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .list-item {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .list-item:before {
+            content: "â€¢";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .inline-code {
+            background: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #d63384;
+        }
+        
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            margin: 30px 0;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            margin-bottom: 5px;
+        }
+        
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        @media print {
+            body {
+                font-size: 12pt;
+            }
+            .main-title {
+                font-size: 24pt;
+            }
+            .section-title {
+                font-size: 18pt;
+            }
+            .subsection-title {
+                font-size: 14pt;
+            }
+        }
+    </style>
+</head>
+<body>
+# Cihuy Platform - User Guide
+
+<strong>Versi 1.0 | September 2025</strong>
+
+---
+
+## 📋 Daftar Isi
+
+1. [Tentang Cihuy Platform](#tentang-cihuy-platform)
+2. [Fitur Utama](#fitur-utama)
+3. [Cara Menggunakan Admin Panel](#cara-menggunakan-admin-panel)
+4. [Cara Menggunakan Aplikasi Mobile](#cara-menggunakan-aplikasi-mobile)
+5. [Panduan Troubleshooting](#panduan-troubleshooting)
+6. [Kontak & Bantuan](#kontak--bantuan)
+
+---
+
+## 🎯 Tentang Cihuy Platform
+
+Cihuy Platform adalah solusi lengkap yang terdiri dari:
+
+- <strong>Admin Panel</strong>: Sistem manajemen web untuk administrator
+- <strong>Aplikasi Mobile</strong>: Aplikasi smartphone untuk pengguna akhir
+- <strong>API Backend</strong>: Sistem yang menghubungkan kedua platform
+
+### Keunggulan Platform
+- ✅ <strong>Mudah Digunakan</strong>: Interface yang intuitif dan user-friendly
+- ✅ <strong>Akses Multi-Platform</strong>: Web admin + Mobile app
+- ✅ <strong>Keamanan Tinggi</strong>: Sistem autentikasi dan enkripsi data
+- ✅ <strong>Real-time Sync</strong>: Data tersinkronisasi secara otomatis
+- ✅ <strong>Responsive Design</strong>: Optimal di semua perangkat
+
+---
+
+## ✨ Fitur Utama
+
+### 🔐 Keamanan & Akses
+- Login aman dengan username/password
+- Reset password otomatis
+- Manajemen hak akses pengguna
+- Enkripsi data sensitif
+
+### 📊 Dashboard & Laporan
+- Overview data real-time
+- Grafik dan statistik interaktif
+- Laporan otomatis
+- Export data ke Excel/PDF
+
+### 👥 Manajemen Pengguna
+- Tambah/edit/hapus pengguna
+- Atur level akses
+- Pantau aktivitas pengguna
+- Kelola profil pengguna
+
+### 📱 Aplikasi Mobile
+- Akses dari smartphone/tablet
+- Notifikasi push real-time
+- Mode offline (terbatas)
+- Sinkronisasi otomatis
+
+---
+
+## 🖥️ Cara Menggunakan Admin Panel
+
+### Login ke Admin Panel
+1. Buka browser dan kunjungi: <code class="inline-code">https://admin.cihuy.com</code>
+2. Masukkan <strong>Username</strong> dan <strong>Password</strong> yang diberikan
+3. Klik tombol <strong>"Login"</strong>
+
+### Navigasi Utama
+
+#### Dashboard
+- <strong>Lokasi</strong>: Halaman utama setelah login
+- <strong>Fungsi</strong>: Melihat ringkasan data dan statistik
+- <strong>Fitur</strong>:
+  - Total pengguna aktif
+  - Grafik pertumbuhan
+  - Aktivitas terbaru
+  - Notifikasi sistem
+
+#### Manajemen Pengguna
+- <strong>Lokasi</strong>: Menu <strong>"Users"</strong> → <strong>"Manage Users"</strong>
+- <strong>Fungsi</strong>: Mengelola data pengguna sistem
+- <strong>Cara Menggunakan</strong>:
+  1. Klik <strong>"Add New User"</strong> untuk menambah pengguna
+  2. Isi form data pengguna (nama, email, password)
+  3. Pilih level akses (Admin/User)
+  4. Klik <strong>"Save"</strong> untuk menyimpan
+
+#### Manajemen Konten
+- <strong>Lokasi</strong>: Menu <strong>"Content"</strong> → <strong>"Manage Content"</strong>
+- <strong>Fungsi</strong>: Mengelola konten dan data utama
+- <strong>Cara Menggunakan</strong>:
+  1. Klik <strong>"Add New"</strong> untuk menambah konten
+  2. Isi form sesuai kebutuhan
+  3. Upload file jika diperlukan
+  4. Klik <strong>"Publish"</strong> untuk mempublikasikan
+
+#### Pengaturan Sistem
+- <strong>Lokasi</strong>: Menu <strong>"Settings"</strong> → <strong>"System Configuration"</strong>
+- <strong>Fungsi</strong>: Mengatur konfigurasi sistem
+- <strong>Yang Bisa Diatur</strong>:
+  - Informasi perusahaan
+  - Email notifications
+  - Backup settings
+  - Security settings
+
+### Tips Penggunaan Admin Panel
+- <strong>Bookmark</strong>: Simpan URL admin panel di bookmark browser
+- <strong>Logout</strong>: Selalu logout setelah selesai menggunakan
+- <strong>Backup</strong>: Lakukan backup data secara berkala
+- <strong>Update</strong>: Pastikan menggunakan browser terbaru
+
+---
+
+## 📱 Cara Menggunakan Aplikasi Mobile
+
+### Download & Install
+1. <strong>Android</strong>: Download dari Google Play Store
+2. <strong>iOS</strong>: Download dari App Store
+3. <strong>Web</strong>: Akses melalui browser di <code class="inline-code">https://app.cihuy.com</code>
+
+### Setup Awal
+1. Buka aplikasi Cihuy
+2. Pilih <strong>"Login"</strong> jika sudah punya akun
+3. Pilih <strong>"Register"</strong> untuk membuat akun baru
+4. Ikuti panduan setup yang muncul
+
+### Fitur Utama Aplikasi
+
+#### Home Dashboard
+- <strong>Lokasi</strong>: Tab pertama di bawah
+- <strong>Fungsi</strong>: Melihat konten dan aktivitas terbaru
+- <strong>Fitur</strong>:
+  - Feed konten
+  - Notifikasi
+  - Quick actions
+  - Search bar
+
+#### Profile
+- <strong>Lokasi</strong>: Tab <strong>"Profile"</strong> di bawah
+- <strong>Fungsi</strong>: Mengelola profil pribadi
+- <strong>Yang Bisa Dilakukan</strong>:
+  - Edit informasi personal
+  - Upload foto profil
+  - Ubah password
+  - Kelola preferensi
+
+#### Search & Discovery
+- <strong>Lokasi</strong>: Tab <strong>"Search"</strong> di bawah
+- <strong>Fungsi</strong>: Mencari konten dan pengguna
+- <strong>Cara Menggunakan</strong>:
+  1. Ketik kata kunci di search bar
+  2. Pilih filter (kategori, tanggal, dll)
+  3. Tap hasil yang diinginkan
+
+#### Notifications
+- <strong>Lokasi</strong>: Tab <strong>"Notifications"</strong> di bawah
+- <strong>Fungsi</strong>: Melihat notifikasi dan pesan
+- <strong>Fitur</strong>:
+  - Notifikasi real-time
+  - Mark as read/unread
+  - Filter notifikasi
+  - Settings notifikasi
+
+### Tips Penggunaan Aplikasi
+- <strong>Update</strong>: Selalu update ke versi terbaru
+- <strong>Internet</strong>: Pastikan koneksi internet stabil
+- <strong>Storage</strong>: Kosongkan cache secara berkala
+- <strong>Permissions</strong>: Berikan izin yang diperlukan
+
+---
+
+## 🔧 Panduan Troubleshooting
+
+### Masalah Umum Admin Panel
+
+#### Tidak Bisa Login
+<strong>Gejala</strong>: Error saat memasukkan username/password
+<strong>Solusi</strong>:
+1. Pastikan username dan password benar
+2. Cek caps lock pada keyboard
+3. Clear cache browser
+4. Hubungi admin sistem
+
+#### Halaman Loading Terlalu Lama
+<strong>Gejala</strong>: Halaman tidak kunjung load
+<strong>Solusi</strong>:
+1. Cek koneksi internet
+2. Refresh halaman (F5)
+3. Restart browser
+4. Coba browser lain
+
+#### Data Tidak Tersimpan
+<strong>Gejala</strong>: Data hilang setelah save
+<strong>Solusi</strong>:
+1. Cek koneksi internet
+2. Pastikan form terisi lengkap
+3. Coba save ulang
+4. Hubungi support
+
+### Masalah Umum Aplikasi Mobile
+
+#### Aplikasi Tidak Bisa Dibuka
+<strong>Gejala</strong>: Aplikasi crash saat dibuka
+<strong>Solusi</strong>:
+1. Restart aplikasi
+2. Restart smartphone
+3. Update aplikasi
+4. Reinstall aplikasi
+
+#### Data Tidak Sinkron
+<strong>Gejala</strong>: Data di mobile berbeda dengan admin
+<strong>Solusi</strong>:
+1. Cek koneksi internet
+2. Pull to refresh
+3. Logout dan login ulang
+4. Update aplikasi
+
+#### Notifikasi Tidak Muncul
+<strong>Gejala</strong>: Tidak menerima notifikasi
+<strong>Solusi</strong>:
+1. Cek pengaturan notifikasi di HP
+2. Pastikan aplikasi tidak di-force close
+3. Cek pengaturan notifikasi di app
+4. Restart aplikasi
+
+### Kontak Support
+Jika masalah tidak teratasi:
+- <strong>Email</strong>: support@cihuy.com
+- <strong>WhatsApp</strong>: +62-xxx-xxx-xxxx
+- <strong>Telepon</strong>: (021) xxxx-xxxx
+- <strong>Jam Kerja</strong>: Senin-Jumat, 09:00-17:00 WIB
+
+---
+
+## 📞 Kontak & Bantuan
+
+### Tim Support
+- <strong>Technical Support</strong>: tech@cihuy.com
+- <strong>User Support</strong>: support@cihuy.com
+- <strong>Sales</strong>: sales@cihuy.com
+
+### Sumber Bantuan Lainnya
+- <strong>Dokumentasi Lengkap</strong>: [docs.cihuy.com](https://docs.cihuy.com)
+- <strong>Video Tutorial</strong>: [youtube.com/cihuy](https://youtube.com/cihuy)
+- <strong>FAQ</strong>: [cihuy.com/faq](https://cihuy.com/faq)
+- <strong>Community Forum</strong>: [forum.cihuy.com](https://forum.cihuy.com)
+
+### Informasi Perusahaan
+- <strong>Website</strong>: [cihuy.com](https://cihuy.com)
+- <strong>Alamat</strong>: Jl. Contoh No. 123, Jakarta 12345
+- <strong>Telepon</strong>: (021) xxxx-xxxx
+- <strong>Email</strong>: info@cihuy.com
+
+---
+
+<strong>© 2025 Cihuy Platform. All rights reserved.</strong>
+
+<em>Dokumen ini dibuat untuk memudahkan penggunaan Cihuy Platform. Untuk informasi teknis lebih detail, silakan merujuk ke Technical Documentation.</em>
+
+
+---
+
+
+
+</body>
+</html>
