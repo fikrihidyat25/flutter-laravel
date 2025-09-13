@@ -7,7 +7,6 @@ Format mengikuti Keep a Changelog (ringkas) dan SemVer.
 - Lengkapi panduan end user per modul
 
 ## 1.0.0 - 2025-09-10
-- Dokumentasi awal: README root, admin/README.md, user/README.md, docs/API.md
 
 
 
