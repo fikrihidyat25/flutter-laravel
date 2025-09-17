@@ -1,12 +1,12 @@
-﻿# Cihuy Platform - Complete Documentation
+# Finote Platform - Complete Documentation
 
-[![Platform](https://img.shields.io/badge/Platform-PHP%20%7C%20Flutter%20%7C%20Web-blue.svg)](https://cihuy.com)
+[![Platform](https://img.shields.io/badge/Platform-PHP%20%7C%20Flutter%20%7C%20Web-blue.svg)](https://finote.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/Documentation-Complete-green.svg)](docs/)
 
-Platform Cihuy adalah solusi lengkap yang terdiri dari sistem admin web dan aplikasi mobile untuk mengelola dan mengakses layanan digital.
+Platform Finote adalah solusi lengkap yang terdiri dari sistem admin web dan aplikasi mobile untuk mengelola dan mengakses layanan digital.
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Overview](#overview)
 - [Architecture](#architecture)
@@ -17,9 +17,9 @@ Platform Cihuy adalah solusi lengkap yang terdiri dari sistem admin web dan apli
 - [Contributing](#contributing)
 - [Support](#support)
 
-## 🎯 Overview
+## Overview
 
-Cihuy Platform menyediakan ekosistem lengkap untuk:
+Finote Platform menyediakan ekosistem lengkap untuk:
 
 - **Admin Panel**: Sistem manajemen web untuk administrator
 - **User App**: Aplikasi mobile untuk end users
@@ -27,13 +27,13 @@ Cihuy Platform menyediakan ekosistem lengkap untuk:
 - **Database**: Sistem penyimpanan data terpusat
 
 ### Key Features
-- 🔐 **Authentication & Authorization**: Sistem keamanan terintegrasi
-- 📊 **Analytics & Reporting**: Dashboard dan laporan real-time
-- 🌐 **Cross-Platform**: Web admin + Mobile app
-- 🔄 **Real-time Sync**: Sinkronisasi data antar platform
-- 📱 **Responsive Design**: Optimal di semua perangkat
+- **Authentication & Authorization**: Sistem keamanan terintegrasi
+- **Analytics & Reporting**: Dashboard dan laporan real-time
+- **Cross-Platform**: Web admin + Mobile app
+- **Real-time Sync**: Sinkronisasi data antar platform
+- **Responsive Design**: Optimal di semua perangkat
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -70,7 +70,7 @@ graph TB
 - **Monitoring**: Application logs dan performance metrics
 - **CI/CD**: GitHub Actions / GitLab CI
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - PHP 8.3+ dengan Composer
@@ -80,8 +80,8 @@ graph TB
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/cihuy/platform.git
-cd cihuy
+git clone https://github.com/finote/platform.git
+cd finote
 ```
 
 ### 2. Setup Admin Panel
@@ -106,21 +106,21 @@ flutter run
 - **User App**: Running di device/emulator
 - **API Documentation**: `docs/API.md`
 
-## 📚 Documentation
+## Documentation
 
-### 📖 Complete Documentation
+### Complete Documentation
 - **[Admin Panel](admin/README.md)** - Panduan lengkap sistem admin
 - **[User App](user/README.md)** - Panduan lengkap aplikasi mobile
 - **[API Reference](docs/API.md)** - Dokumentasi API endpoints
 - **[Changelog](CHANGELOG.md)** - Catatan perubahan versi
 
-### 🎯 Target Audience
+### Target Audience
 - **Developers**: Setup, development, dan deployment
 - **End Users**: Panduan penggunaan aplikasi
 - **System Administrators**: Konfigurasi dan maintenance
 - **Project Managers**: Overview dan roadmap
 
-### 📄 PDF Export
+### PDF Export
 Untuk versi PDF dari dokumentasi:
 
 #### Method 1: Manual (Recommended)
@@ -143,11 +143,11 @@ powershell -ExecutionPolicy Bypass -File print-to-pdf.ps1
 pandoc README.md -o README.pdf --from gfm --pdf-engine=wkhtmltopdf
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 ```
-cihuy/
+finote/
 ├── admin/                 # PHP Admin Panel
 │   ├── app/
 │   ├── config/
@@ -178,7 +178,7 @@ cihuy/
 - **PHP**: PSR-12 coding standards
 - **Dart/Flutter**: Dart style guide
 - **Git**: Conventional commits
-- **Documentation**: Markdown dengan emoji dan struktur yang jelas
+- **Documentation**: Markdown dengan struktur yang jelas
 
 ### Testing Strategy
 - **Unit Tests**: Business logic dan utilities
@@ -186,7 +186,7 @@ cihuy/
 - **E2E Tests**: Critical user flows
 - **Performance Tests**: Load testing untuk API
 
-## 🚀 Deployment
+## Deployment
 
 ### Environment Setup
 
@@ -211,7 +211,7 @@ DB_CONNECTION=mysql
 
 # User App
 DEBUG_MODE=false
-API_BASE_URL=https://api.cihuy.com
+API_BASE_URL=https://api.finote.com
 ```
 
 ### Deployment Checklist
@@ -248,11 +248,11 @@ jobs:
           flutter build apk --release
 ```
 
-## 🤝 Contributing
+## Contributing
 
 ### How to Contribute
 1. **Read** [CONTRIBUTING.md](CONTRIBUTING.md) untuk guidelines lengkap
-2. **Check** [Issues](https://github.com/cihuy/platform/issues) untuk tugas yang tersedia
+2. **Check** [Issues](https://github.com/finote/platform/issues) untuk tugas yang tersedia
 3. **Fork** repository dan buat branch feature
 4. **Develop** dengan mengikuti coding standards
 5. **Test** perubahan secara menyeluruh
@@ -265,20 +265,20 @@ jobs:
 - Update dokumentasi jika diperlukan
 
 ### Reporting Issues
-- Gunakan [GitHub Issues](https://github.com/cihuy/platform/issues)
+- Gunakan [GitHub Issues](https://github.com/finote/platform/issues)
 - Berikan detail reproduction steps
 - Sertakan informasi sistem
 - Lampirkan log yang relevan
 
-## 📊 Project Status
+## Project Status
 
 ### Current Version: 1.0.0
-- ✅ Admin Panel (PHP) - Complete
-- ✅ User App (Flutter) - Complete
-- ✅ API Backend - Complete
-- ✅ Documentation - Complete
-- 🔄 Testing - In Progress
-- 🔄 Performance Optimization - In Progress
+- Admin Panel (PHP) - Complete
+- User App (Flutter) - Complete
+- API Backend - Complete
+- Documentation - Complete
+- Testing - In Progress
+- Performance Optimization - In Progress
 
 ### Roadmap
 - [ ] **v1.1.0**: Advanced analytics dashboard
@@ -286,29 +286,29 @@ jobs:
 - [ ] **v1.3.0**: Multi-language support
 - [ ] **v2.0.0**: Microservices architecture
 
-## 📞 Support
+## Support
 
 ### Documentation & Help
-- **📖 Full Documentation**: [docs.cihuy.com](https://docs.cihuy.com)
-- **🐛 Bug Reports**: [GitHub Issues](https://github.com/cihuy/platform/issues)
-- **💡 Feature Requests**: [GitHub Discussions](https://github.com/cihuy/platform/discussions)
+- **Full Documentation**: [docs.finote.com](https://docs.finote.com)
+- **Bug Reports**: [GitHub Issues](https://github.com/finote/platform/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/finote/platform/discussions)
 
 ### Community & Contact
-- **📧 Email**: support@cihuy.com
-- **💬 Discord**: [Cihuy Community](https://discord.gg/cihuy)
-- **🐦 Twitter**: [@CihuyPlatform](https://twitter.com/CihuyPlatform)
-- **📱 WhatsApp**: +62-xxx-xxx-xxxx
+- **Email**: support@finote.com
+- **Discord**: [Finote Community](https://discord.gg/finote)
+- **Twitter**: [@FinotePlatform](https://twitter.com/FinotePlatform)
+- **WhatsApp**: +62-xxx-xxx-xxxx
 
 ### Professional Support
-- **🏢 Enterprise Support**: enterprise@cihuy.com
-- **🔧 Custom Development**: dev@cihuy.com
-- **📈 Consulting Services**: consulting@cihuy.com
+- **Enterprise Support**: enterprise@finote.com
+- **Custom Development**: dev@finote.com
+- **Consulting Services**: consulting@finote.com
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Flutter Team** untuk framework mobile yang luar biasa
 - **Laravel Team** untuk PHP framework yang powerful
@@ -319,10 +319,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ by Cihuy Team**
+**Made with love by Finote Team**
 
-[![Website](https://img.shields.io/badge/Website-cihuy.com-blue)](https://cihuy.com)
-[![GitHub](https://img.shields.io/badge/GitHub-CihuyPlatform-black)](https://github.com/fikrihidyat25)
+[![Website](https://img.shields.io/badge/Website-finote.com-blue)](https://finote.com)
+[![GitHub](https://img.shields.io/badge/GitHub-FinotePlatform-black)](https://github.com/fikrihidyat25)
 
 </div>
 
@@ -330,15 +330,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 
-# Admin Panel - Cihuy Management System
+# Admin Panel - Finote Management System
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.0%2B-blue.svg)](https://php.net)
 [![Framework](https://img.shields.io/badge/Framework-PHP%20Native%2FLaravel%2FCI-green.svg)](https://laravel.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Sistem manajemen admin untuk platform Cihuy yang menyediakan antarmuka web untuk mengelola data, pengguna, dan operasional bisnis.
+Sistem manajemen admin untuk platform Finote yang menyediakan antarmuka web untuk mengelola data, pengguna, dan operasional bisnis.
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Overview](#overview)
 - [Features](#features)
@@ -352,9 +352,9 @@ Sistem manajemen admin untuk platform Cihuy yang menyediakan antarmuka web untuk
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 
-## 🎯 Overview
+## Overview
 
-Admin Panel Cihuy adalah sistem manajemen berbasis web yang memungkinkan administrator untuk:
+Admin Panel Finote adalah sistem manajemen berbasis web yang memungkinkan administrator untuk:
 
 - Mengelola data master dan konten
 - Memantau aktivitas pengguna
@@ -368,39 +368,39 @@ Admin Panel Cihuy adalah sistem manajemen berbasis web yang memungkinkan adminis
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Authentication**: JWT/Session-based
 
-## ✨ Features
+## Features
 
-### 🔐 Authentication & Authorization
+### Authentication & Authorization
 - Login/logout dengan validasi keamanan
 - Role-based access control (RBAC)
 - Session management
 - Password reset functionality
 
-### 📊 Dashboard & Analytics
+### Dashboard & Analytics
 - Overview metrik bisnis
 - Grafik dan chart interaktif
 - Real-time notifications
 - Activity logs
 
-### 👥 User Management
+### User Management
 - CRUD operations untuk pengguna
 - Role assignment
 - Permission management
 - User activity tracking
 
-### 📝 Content Management
+### Content Management
 - Data master management
 - File upload/download
 - Content publishing
 - Media library
 
-### 🔧 System Administration
+### System Administration
 - System configuration
 - Database management
 - Log monitoring
 - Backup/restore
 
-## 📋 Requirements
+## Requirements
 
 ### Server Requirements
 - **PHP**: 8.0 atau lebih tinggi
@@ -427,12 +427,12 @@ php-fileinfo
 - Git
 - Node.js 16+ (untuk asset compilation)
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd cihuy/admin
+cd finote/admin
 ```
 
 ### 2. Install Dependencies
@@ -487,12 +487,12 @@ php -S localhost:8000
 # Konfigurasi virtual host
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables (.env)
 ```env
 # Application
-APP_NAME="Cihuy Admin"
+APP_NAME="Finote Admin"
 APP_ENV=local
 APP_DEBUG=true
 APP_URL=http://localhost:8000
@@ -501,7 +501,7 @@ APP_URL=http://localhost:8000
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=cihuy_admin
+DB_DATABASE=finote_admin
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -530,7 +530,7 @@ JWT_SECRET=your-jwt-secret-here
     'driver' => 'mysql',
     'host' => env('DB_HOST', '127.0.0.1'),
     'port' => env('DB_PORT', '3306'),
-    'database' => env('DB_DATABASE', 'cihuy_admin'),
+    'database' => env('DB_DATABASE', 'finote_admin'),
     'username' => env('DB_USERNAME', 'root'),
     'password' => env('DB_PASSWORD', ''),
     'charset' => 'utf8mb4',
@@ -538,7 +538,7 @@ JWT_SECRET=your-jwt-secret-here
 ],
 ```
 
-## 📖 Usage
+## Usage
 
 ### Login
 1. Buka URL admin panel: `https://yourdomain.com/admin`
@@ -570,7 +570,7 @@ JWT_SECRET=your-jwt-secret-here
 3. Test koneksi database dan email
 4. Save configuration
 
-## 🔌 API Reference
+## API Reference
 
 ### Authentication Endpoints
 ```http
@@ -578,7 +578,7 @@ POST /api/auth/login
 Content-Type: application/json
 
 {
-    "email": "admin@cihuy.com",
+    "email": "admin@finote.com",
     "password": "password123"
 }
 ```
@@ -618,7 +618,7 @@ DELETE /api/content/{id}
 }
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 ```
@@ -681,7 +681,7 @@ php artisan migrate
 php artisan migrate:rollback
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Checklist
 - [ ] Set `APP_ENV=production`
@@ -731,7 +731,7 @@ location ~ \.php$ {
 }
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -783,7 +783,7 @@ tail -f storage/logs/laravel.log
 - Optimize database queries
 - Use CDN for static assets
 
-## 🤝 Contributing
+## Contributing
 
 ### Development Workflow
 1. Fork the repository
@@ -804,35 +804,35 @@ tail -f storage/logs/laravel.log
 - Include system information
 - Attach relevant logs
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+## Support
 
-- **Documentation**: [docs.cihuy.com](https://docs.cihuy.com)
-- **Issues**: [GitHub Issues](https://github.com/cihuy/admin/issues)
-- **Email**: support@cihuy.com
-- **Discord**: [Cihuy Community](https://discord.gg/cihuy)
-
----
-
-**Made with ❤️ by Cihuy Team**
-
+- **Documentation**: [docs.finote.com](https://docs.finote.com)
+- **Issues**: [GitHub Issues](https://github.com/finote/admin/issues)
+- **Email**: support@finote.com
+- **Discord**: [Finote Community](https://discord.gg/finote)
 
 ---
 
+**Made with love by Finote Team**
 
-# Cihuy User App - Flutter Mobile Application
+
+---
+
+
+# Finote User App - Flutter Mobile Application
 
 [![Flutter Version](https://img.shields.io/badge/Flutter-3.0%2B-blue.svg)](https://flutter.dev)
 [![Dart Version](https://img.shields.io/badge/Dart-3.0%2B-blue.svg)](https://dart.dev)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-green.svg)](https://flutter.dev)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Aplikasi mobile Cihuy yang memungkinkan pengguna untuk mengakses layanan dan fitur platform Cihuy melalui perangkat mobile.
+Aplikasi mobile Finote yang memungkinkan pengguna untuk mengakses layanan dan fitur platform Finote melalui perangkat mobile.
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Overview](#overview)
 - [Features](#features)
@@ -846,11 +846,11 @@ Aplikasi mobile Cihuy yang memungkinkan pengguna untuk mengakses layanan dan fit
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 
-## 🎯 Overview
+## Overview
 
-Cihuy User App adalah aplikasi mobile cross-platform yang dibangun dengan Flutter, memberikan pengalaman pengguna yang optimal untuk:
+Finote User App adalah aplikasi mobile cross-platform yang dibangun dengan Flutter, memberikan pengalaman pengguna yang optimal untuk:
 
-- Mengakses konten dan layanan Cihuy
+- Mengakses konten dan layanan Finote
 - Berinteraksi dengan komunitas
 - Mengelola profil dan preferensi
 - Menerima notifikasi real-time
@@ -864,49 +864,49 @@ Cihuy User App adalah aplikasi mobile cross-platform yang dibangun dengan Flutte
 - **Local Storage**: SQLite/Hive/SharedPreferences
 - **Authentication**: JWT Token
 
-## ✨ Features
+## Features
 
-### 🔐 Authentication & Security
+### Authentication & Security
 - Secure login/logout
 - Biometric authentication (Fingerprint/Face ID)
 - Auto-login dengan token refresh
 - Password reset functionality
 - Session management
 
-### 📱 User Interface
+### User Interface
 - Material Design 3 / Cupertino
 - Dark/Light theme support
 - Responsive design untuk berbagai ukuran layar
 - Smooth animations dan transitions
 - Offline-first architecture
 
-### 🌐 Connectivity
+### Connectivity
 - Real-time data synchronization
 - Offline mode dengan local caching
 - Background sync
 - Network status monitoring
 - Retry mechanism untuk failed requests
 
-### 📊 Content & Media
+### Content & Media
 - Rich content display
 - Image/video viewer
 - File download/upload
 - Media compression
 - Caching untuk media files
 
-### 🔔 Notifications
+### Notifications
 - Push notifications
 - In-app notifications
 - Notification preferences
 - Deep linking support
 
-### 🎨 Personalization
+### Personalization
 - Customizable themes
 - User preferences
 - Language selection
 - Accessibility features
 
-## 📋 Requirements
+## Requirements
 
 ### Development Requirements
 - **Flutter SDK**: 3.0.0 atau lebih tinggi
@@ -940,12 +940,12 @@ Cihuy User App adalah aplikasi mobile cross-platform yang dibangun dengan Flutte
 - **Storage**: 2GB+ free space
 - **Network**: Internet connection untuk sync
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone Repository
 ```bash
 git clone <repository-url>
-cd cihuy/user
+cd finote/user
 ```
 
 ### 2. Install Flutter Dependencies
@@ -1004,12 +1004,12 @@ flutter run -d android   # Android
 flutter run -d ios       # iOS
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables (.env)
 ```env
 # API Configuration
-API_BASE_URL=https://api.cihuy.com
+API_BASE_URL=https://api.finote.com
 API_VERSION=v1
 API_TIMEOUT=30000
 
@@ -1034,8 +1034,8 @@ LOG_LEVEL=debug
 
 ### Flutter Configuration (pubspec.yaml)
 ```yaml
-name: cihuy_user_app
-description: Cihuy User Mobile Application
+name: finote_user_app
+description: Finote User Mobile Application
 version: 1.0.0+1
 
 environment:
@@ -1100,11 +1100,11 @@ android {
 <true/>
 ```
 
-## 📖 Usage
+## Usage
 
 ### First Time Setup
 1. **Download & Install**: Install aplikasi dari Play Store/App Store
-2. **Launch App**: Buka aplikasi Cihuy
+2. **Launch App**: Buka aplikasi Finote
 3. **Permissions**: Berikan izin yang diperlukan (kamera, lokasi, notifikasi)
 4. **Login**: Masukkan kredensial atau daftar akun baru
 5. **Onboarding**: Ikuti panduan setup awal
@@ -1159,7 +1159,7 @@ android {
 2. Pilih bahasa yang diinginkan
 3. Restart aplikasi untuk menerapkan
 
-## 🔌 API Integration
+## API Integration
 
 ### Authentication Flow
 ```dart
@@ -1224,7 +1224,7 @@ class OfflineService {
 }
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 ```
@@ -1327,7 +1327,7 @@ debugPrint('Debug message');
 // Use Flutter DevTools
 ```
 
-## 🚀 Build & Deployment
+## Build & Deployment
 
 ### Development Build
 ```bash
@@ -1380,7 +1380,7 @@ flutter build web --release
 #### Android
 ```bash
 # Generate keystore
-keytool -genkey -v -keystore ~/cihuy-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias cihuy
+keytool -genkey -v -keystore ~/finote-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias finote
 
 # Configure signing di android/app/build.gradle
 ```
@@ -1414,7 +1414,7 @@ jobs:
           path: build/app/outputs/flutter-apk/app-release.apk
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -1493,7 +1493,7 @@ flutter analyze --no-fatal-infos
 - **Code signing**: Check certificates di Apple Developer Portal
 - **Simulator issues**: Reset simulator atau restart Xcode
 
-## 🤝 Contributing
+## Contributing
 
 ### Development Workflow
 1. Fork repository
@@ -1521,20 +1521,20 @@ flutter analyze --no-fatal-infos
 - Ensure all tests pass
 - Request review dari maintainers
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+## Support
 
-- **Documentation**: [docs.cihuy.com](https://docs.cihuy.com)
-- **Issues**: [GitHub Issues](https://github.com/cihuy/user/issues)
-- **Email**: support@cihuy.com
-- **Discord**: [Cihuy Community](https://discord.gg/cihuy)
+- **Documentation**: [docs.finote.com](https://docs.finote.com)
+- **Issues**: [GitHub Issues](https://github.com/finote/user/issues)
+- **Email**: support@finote.com
+- **Discord**: [Finote Community](https://discord.gg/finote)
 
 ---
 
-**Made with ❤️ by Cihuy Team**
+**Made with love by Finote Team**
 
 
 ---
@@ -1609,13 +1609,13 @@ Dokumen ini merangkum autentikasi, endpoint umum, dan skema respons yang digunak
 ---
 
 
-# Cihuy Platform - Technical Documentation
+# Finote Platform - Technical Documentation
 
 **Versi 1.0 | September 2025**
 
 ---
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 1. [System Overview](#system-overview)
 2. [Architecture & Technology Stack](#architecture--technology-stack)
@@ -1630,7 +1630,7 @@ Dokumen ini merangkum autentikasi, endpoint umum, dan skema respons yang digunak
 
 ---
 
-## 🎯 System Overview
+## System Overview
 
 ### Platform Components
 - **Admin Panel**: PHP-based web management system
@@ -1649,7 +1649,7 @@ Dokumen ini merangkum autentikasi, endpoint umum, dan skema respons yang digunak
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+## Architecture & Technology Stack
 
 ### Backend Architecture
 ```
@@ -1710,7 +1710,7 @@ Dokumen ini merangkum autentikasi, endpoint umum, dan skema respons yang digunak
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 ```bash
@@ -1740,7 +1740,7 @@ export PATH="$PATH:/opt/flutter/bin"
 ### Admin Panel Setup
 ```bash
 # Clone repository
-git clone https://github.com/cihuy/platform.git
+git clone https://github.com/finote/platform.git
 cd platform/admin
 
 # Install dependencies
@@ -1787,33 +1787,33 @@ flutter run -d ios       # iOS
 ### Database Setup
 ```sql
 -- Create database
-CREATE DATABASE cihuy_platform CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE finote_platform CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- Create user
-CREATE USER 'cihuy_user'@'localhost' IDENTIFIED BY 'secure_password';
-GRANT ALL PRIVILEGES ON cihuy_platform.* TO 'cihuy_user'@'localhost';
+CREATE USER 'finote_user'@'localhost' IDENTIFIED BY 'secure_password';
+GRANT ALL PRIVILEGES ON finote_platform.* TO 'finote_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables (.env)
 ```env
 # Application
-APP_NAME="Cihuy Platform"
+APP_NAME="Finote Platform"
 APP_ENV=production
 APP_DEBUG=false
-APP_URL=https://admin.cihuy.com
+APP_URL=https://admin.finote.com
 APP_KEY=base64:your-app-key-here
 
 # Database
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=cihuy_platform
-DB_USERNAME=cihuy_user
+DB_DATABASE=finote_platform
+DB_USERNAME=finote_user
 DB_PASSWORD=secure_password
 
 # Cache
@@ -1830,7 +1830,7 @@ REDIS_PORT=6379
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
-MAIL_USERNAME=noreply@cihuy.com
+MAIL_USERNAME=noreply@finote.com
 MAIL_PASSWORD=app_password
 MAIL_ENCRYPTION=tls
 
@@ -1842,16 +1842,16 @@ AWS_DEFAULT_REGION=us-east-1
 AWS_BUCKET=
 
 # Security
-SANCTUM_STATEFUL_DOMAINS=admin.cihuy.com,app.cihuy.com
-SESSION_DOMAIN=.cihuy.com
+SANCTUM_STATEFUL_DOMAINS=admin.finote.com,app.finote.com
+SESSION_DOMAIN=.finote.com
 ```
 
 ### Nginx Configuration
 ```nginx
 server {
     listen 80;
-    server_name admin.cihuy.com;
-    root /var/www/cihuy/admin/public;
+    server_name admin.finote.com;
+    root /var/www/finote/admin/public;
     index index.php;
 
     location / {
@@ -1874,8 +1874,8 @@ server {
 ### Flutter Configuration
 ```yaml
 # pubspec.yaml
-name: cihuy_user_app
-description: Cihuy User Mobile Application
+name: finote_user_app
+description: Finote User Mobile Application
 version: 1.0.0+1
 
 environment:
@@ -1902,7 +1902,7 @@ dependencies:
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### Authentication Endpoints
 ```http
@@ -1999,7 +1999,7 @@ Response:
 
 ---
 
-## 🛠️ Development Guidelines
+## Development Guidelines
 
 ### Code Standards
 
@@ -2121,7 +2121,7 @@ class AuthServiceTest extends TestCase
 ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:cihuy_user_app/widgets/user_profile_widget.dart';
+import 'package:finote_user_app/widgets/user_profile_widget.dart';
 
 void main() {
   group('UserProfileWidget', () {
@@ -2143,7 +2143,7 @@ void main() {
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Checklist
 - [ ] Environment variables configured
@@ -2232,7 +2232,7 @@ CMD ["php-fpm"]
 
 ---
 
-## 📊 Monitoring & Maintenance
+## Monitoring & Maintenance
 
 ### Application Monitoring
 ```php
@@ -2292,19 +2292,19 @@ class PerformanceMonitor
 # backup.sh
 
 # Database backup
-mysqldump -u cihuy_user -p cihuy_platform > backup_$(date +%Y%m%d_%H%M%S).sql
+mysqldump -u finote_user -p finote_platform > backup_$(date +%Y%m%d_%H%M%S).sql
 
 # File backup
 tar -czf files_backup_$(date +%Y%m%d_%H%M%S).tar.gz storage/app/public
 
 # Upload to cloud storage
-aws s3 cp backup_*.sql s3://cihuy-backups/database/
-aws s3 cp files_backup_*.tar.gz s3://cihuy-backups/files/
+aws s3 cp backup_*.sql s3://finote-backups/database/
+aws s3 cp files_backup_*.tar.gz s3://finote-backups/files/
 ```
 
 ---
 
-## 🔒 Security
+## Security
 
 ### Authentication & Authorization
 ```php
@@ -2353,7 +2353,7 @@ $decrypted = Crypt::decryptString($encrypted);
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -2381,7 +2381,7 @@ ps aux --sort=-%mem | head
 
 # Check disk usage
 df -h
-du -sh /var/www/cihuy/*
+du -sh /var/www/finote/*
 ```
 
 #### Flutter Build Issues
@@ -2413,21 +2413,21 @@ flutter doctor -v
 
 ---
 
-## 📞 Support & Resources
+## Support & Resources
 
 ### Technical Support
-- **Email**: tech@cihuy.com
-- **GitHub Issues**: [github.com/cihuy/platform/issues](https://github.com/cihuy/platform/issues)
-- **Documentation**: [docs.cihuy.com](https://docs.cihuy.com)
+- **Email**: tech@finote.com
+- **GitHub Issues**: [github.com/finote/platform/issues](https://github.com/finote/platform/issues)
+- **Documentation**: [docs.finote.com](https://docs.finote.com)
 
 ### Development Resources
 - **Laravel Documentation**: [laravel.com/docs](https://laravel.com/docs)
 - **Flutter Documentation**: [flutter.dev/docs](https://flutter.dev/docs)
-- **API Documentation**: [api.cihuy.com/docs](https://api.cihuy.com/docs)
+- **API Documentation**: [api.finote.com/docs](https://api.finote.com/docs)
 
 ---
 
-**© 2025 Cihuy Platform. All rights reserved.**
+**© 2025 Finote Platform. All rights reserved.**
 
 *This technical documentation is intended for developers and system administrators. For user guides, please refer to the User Guide documentation.*
 
@@ -2435,11 +2435,10 @@ flutter doctor -v
 ---
 
 
-# Contributing to Cihuy Platform
+# Contributing to Finote Platform
 
-Terima kasih telah mempertimbangkan untuk berkontribusi pada Cihuy Platform! 🎉
-
-## 📋 Daftar Isi
+Terima kasih telah mempertimbangkan untuk berkontribusi pada Finote Platform! 
+## Daftar Isi
 
 - [Code of Conduct](#code-of-conduct)
 - [Getting Started](#getting-started)
@@ -2450,7 +2449,7 @@ Terima kasih telah mempertimbangkan untuk berkontribusi pada Cihuy Platform! �
 - [Issue Reporting](#issue-reporting)
 - [Documentation](#documentation)
 
-## 🤝 Code of Conduct
+## Code of Conduct
 
 ### Our Pledge
 Kami berkomitmen untuk menciptakan lingkungan yang inklusif dan ramah untuk semua kontributor, terlepas dari:
@@ -2474,7 +2473,7 @@ Kami berkomitmen untuk menciptakan lingkungan yang inklusif dan ramah untuk semu
 - Publikasi informasi pribadi tanpa izin
 - Perilaku lain yang tidak pantas dalam lingkungan profesional
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Git 2.0+
@@ -2488,13 +2487,13 @@ Kami berkomitmen untuk menciptakan lingkungan yang inklusif dan ramah untuk semu
 #### 1. Fork Repository
 ```bash
 # Fork repository di GitHub, lalu clone
-git clone https://github.com/YOUR_USERNAME/cihuy-platform.git
-cd cihuy-platform
+git clone https://github.com/YOUR_USERNAME/finote-platform.git
+cd finote-platform
 ```
 
 #### 2. Add Upstream Remote
 ```bash
-git remote add upstream https://github.com/cihuy/platform.git
+git remote add upstream https://github.com/finote/platform.git
 ```
 
 #### 3. Setup Admin Panel
@@ -2519,7 +2518,7 @@ flutter run
 - User App: Running di device/emulator
 - API: http://localhost:8000/api
 
-## 🔄 Development Process
+## Development Process
 
 ### Branch Strategy
 - `main`: Branch utama untuk production
@@ -2549,7 +2548,7 @@ test(auth): add unit tests for login service
 chore(deps): update flutter dependencies
 ```
 
-## 📝 Coding Standards
+## Coding Standards
 
 ### PHP (Admin Panel)
 ```php
@@ -2655,7 +2654,7 @@ update
 changes
 ```
 
-## 🧪 Testing Guidelines
+## Testing Guidelines
 
 ### Test Structure
 ```
@@ -2701,7 +2700,7 @@ class AuthServiceTest extends TestCase
 ### Flutter Testing (User App)
 ```dart
 import 'package:flutter_test/flutter_test.dart';
-import 'package:cihuy_user_app/services/auth_service.dart';
+import 'package:finote_user_app/services/auth_service.dart';
 
 void main() {
   group('AuthService', () {
@@ -2733,7 +2732,7 @@ void main() {
 - **New features**: Must include tests
 - **Bug fixes**: Must include regression tests
 
-## 🔀 Pull Request Process
+## Pull Request Process
 
 ### Before Submitting
 - [ ] Code follows coding standards
@@ -2776,7 +2775,7 @@ Add screenshots for UI changes
 4. **Documentation** review
 5. **Approval** and merge
 
-## 🐛 Issue Reporting
+##  Issue Reporting
 
 ### Bug Reports
 ```markdown
@@ -2820,7 +2819,7 @@ A clear description of any alternative solutions.
 Add any other context or screenshots.
 ```
 
-## 📚 Documentation
+## Documentation
 
 ### Code Documentation
 - **PHPDoc** untuk PHP functions/methods
@@ -2841,7 +2840,7 @@ Add any other context or screenshots.
 3. Update CHANGELOG.md
 4. Add migration guides for breaking changes
 
-## 🏷️ Release Process
+##  Release Process
 
 ### Version Numbering
 - **Major** (1.0.0): Breaking changes
@@ -2857,7 +2856,7 @@ Add any other context or screenshots.
 - [ ] Tag created
 - [ ] Release published
 
-## 🤔 Questions?
+##  Questions?
 
 ### Getting Help
 - **GitHub Discussions**: For general questions
@@ -2870,7 +2869,7 @@ Add any other context or screenshots.
 - Experienced contributors can volunteer as mentors
 - Pair programming sessions available
 
-## 🙏 Recognition
+##  Recognition
 
 ### Contributors
 - All contributors will be listed in CONTRIBUTORS.md
@@ -2885,7 +2884,7 @@ Add any other context or screenshots.
 
 ---
 
-**Thank you for contributing to Cihuy Platform! 🚀**
+**Thank you for contributing to Finote Platform! **
 
 *This contributing guide is inspired by best practices from the open source community.*
 
